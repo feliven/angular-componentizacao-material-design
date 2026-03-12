@@ -9,14 +9,4 @@ import { Footer } from '../../shared/footer/footer';
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
-export class Home {
-  private readonly document = inject(DOCUMENT);
-
-  ativarModoClaro = signal<boolean>(false);
-
-  constructor() {
-    effect(() => {
-      this.document.body.style.colorScheme = this.ativarModoClaro() ? 'light' : 'dark';
-    });
-  }
-}
+export class Home {}
