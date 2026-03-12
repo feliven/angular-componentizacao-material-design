@@ -1,0 +1,10 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--mat-sys-surface-container);
+}
+
+.botoes-direita {
+  display: flex;
+  gap: 0.25rem;
+}

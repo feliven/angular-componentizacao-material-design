@@ -1,1 +1,29 @@
-<p>header works!</p>
+<mat-toolbar>
+  <a matButton="outlined" routerLink="/">
+    <span>Jornada Milhas</span>
+  </a>
+
+  <div class="botoes-direita">
+    <a matButton="tonal" href="#">
+      <span>Vender milhas</span>
+    </a>
+
+    <a matButton="tonal" href="#">
+      <span>Sobre</span>
+    </a>
+
+    <a matButton="filled" href="#">
+      <mat-icon>flare</mat-icon>
+      <span>Cadastre-se</span>
+    </a>
+
+    <a matButton="filled" href="#">
+      <mat-icon>login</mat-icon>
+      <span>Login</span>
+    </a>
+
+    <button matMiniFab (click)="emitirModoClaroEscuro()">
+      <mat-icon>contrast_square</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
