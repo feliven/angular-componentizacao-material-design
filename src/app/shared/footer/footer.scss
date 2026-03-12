@@ -1,0 +1,37 @@
+footer {
+  margin: 0;
+  padding: 0;
+
+  .imagem-banner {
+    width: 100%;
+  }
+
+  .rodape {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 0.5rem;
+    justify-content: space-around;
+    padding: 1rem 0;
+
+    .coluna-esquerda {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      img {
+        width: 50%;
+      }
+    }
+    .coluna-direita {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .icones-redes-sociais {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+}
