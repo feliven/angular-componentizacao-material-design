@@ -1,10 +1,29 @@
-mat-toolbar {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--mat-sys-surface-container);
+.titulo {
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  box-shadow: 0 0 4px 1px violet;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.botoes-direita {
+.titulo:hover {
+  box-shadow: 0 0 5px 2px violet;
+}
+
+mat-toolbar,
+.grupo-botoes,
+.primeiro-grupo-botao,
+.segundo-grupo-botao {
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
   gap: 0.25rem;
+  background-color: var(--mat-sys-surface-container);
+  justify-content: center;
+}
+
+mat-toolbar {
+  padding: 0.5rem 0;
+  justify-content: space-around;
 }

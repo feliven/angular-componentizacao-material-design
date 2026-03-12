@@ -1,29 +1,35 @@
-<mat-toolbar>
-  <a matButton="outlined" routerLink="/">
-    <span>Jornada Milhas</span>
-  </a>
-
-  <div class="botoes-direita">
-    <a matButton="tonal" href="#">
-      <span>Vender milhas</span>
+<header>
+  <mat-toolbar>
+    <a class="titulo" matRipple routerLink="/">
+      <span>Jornada Milhas</span>
     </a>
 
-    <a matButton="tonal" href="#">
-      <span>Sobre</span>
-    </a>
+    <div class="grupo-botoes">
+      <div class="primeiro-grupo-botao">
+        <a matButton="tonal" href="#">
+          <span>Vender milhas</span>
+        </a>
 
-    <a matButton="filled" href="#">
-      <mat-icon>flare</mat-icon>
-      <span>Cadastre-se</span>
-    </a>
+        <a matButton="tonal" href="#">
+          <span>Sobre</span>
+        </a>
+      </div>
 
-    <a matButton="filled" href="#">
-      <mat-icon>login</mat-icon>
-      <span>Login</span>
-    </a>
+      <div class="segundo-grupo-botao">
+        <a matButton="filled" href="#">
+          <mat-icon>flare</mat-icon>
+          <span>Cadastre-se</span>
+        </a>
 
-    <button matMiniFab (click)="emitirModoClaroEscuro()">
-      <mat-icon>contrast_square</mat-icon>
-    </button>
-  </div>
-</mat-toolbar>
+        <a matButton="filled" href="#">
+          <mat-icon>login</mat-icon>
+          <span>Login</span>
+        </a>
+
+        <button matMiniFab (click)="emitirModoClaroEscuro()">
+          <mat-icon>contrast_square</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>
+</header>
