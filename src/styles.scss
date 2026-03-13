@@ -35,3 +35,53 @@ body {
   height: 100%;
 }
 /* You can add global styles to this file, and also import other style files */
+.card {
+  text-align: center;
+  border-radius: 15px;
+
+  &.primary {
+    mat-card {
+      background-color: var(--mat-sys-secondary-container);
+      color: var(--mat-sys-on-secondary-container);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--mat-sys-tertiary-container);
+        color: var(--mat-sys-on-tertiary-container);
+      }
+
+      mat-card-actions {
+        button {
+          background-color: var(--mat-sys-primary-container);
+          color: var(--mat-sys-on-primary-container);
+          transition: background-color 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--mat-sys-inverse-on-surface);
+            background-color: var(--mat-sys-inverse-surface);
+          }
+        }
+      }
+    }
+  }
+  &.secondary {
+    mat-card {
+      background-color: var(--mat-sys-surface-variant);
+      color: var(--mat-sys-on-surface-variant);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--mat-sys-tertiary);
+        color: var(--mat-sys-on-tertiary);
+      }
+
+      mat-card-actions {
+        button {
+          background-color: var(--mat-sys-tertiary-container);
+          color: var(--mat-sys-on-tertiary-container);
+          transition: background-color 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
