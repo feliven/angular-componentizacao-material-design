@@ -1,4 +1,4 @@
-import { Component, output, signal } from '@angular/core';
+import { Component, signal, DOCUMENT, effect, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { MatRippleModule } from '@angular/material/core';
@@ -14,10 +14,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 })
 export class Header {
   modoClaro = signal<boolean>(false);
-  emitirModo = output<boolean>();
+  private readonly document = inject(DOCUMENT);
 
   emitirModoClaroEscuro() {
     this.modoClaro.set(!this.modoClaro());
-    this.emitirModo.emit(this.modoClaro());
+  }
+
+  constructor() {
+    effect(() => {
+      this.document.body.style.colorScheme = this.modoClaro() ? 'light' : 'dark';
+    });
   }
 }
