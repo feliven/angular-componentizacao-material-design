@@ -1,0 +1,18 @@
+.card {
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+
+  &.primary {
+    background-color: var(--mat-sys-secondary-container);
+    &:hover {
+      background-color: var(--mat-sys-primary-container);
+    }
+  }
+  &.secondary {
+    background-color: var(--mat-sys-surface-variant);
+    &:hover {
+      background-color: var(--mat-sys-tertiary-container);
+    }
+  }
+}
