@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 import { Banner } from '../../shared/banner/banner';
-import { Card } from '../../shared/card/card';
 import { CardBusca } from '../../shared/card-busca/card-busca';
+import { CardDepoimento } from '../../shared/card-depoimento/card-depoimento';
 
 @Component({
   selector: 'app-home',
-  imports: [Banner, Card, CardBusca],
+  imports: [Banner, CardBusca, CardDepoimento],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
