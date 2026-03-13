@@ -26,11 +26,20 @@ footer {
     .coluna-direita {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      justify-content: space-evenly;
 
       .icones-redes-sociais {
         display: flex;
         justify-content: space-around;
+
+        a {
+          mat-icon {
+            color: var(--mat-sys-tertiary);
+          }
+          mat-icon:hover {
+            color: var(--mat-sys-primary);
+          }
+        }
       }
     }
   }
