@@ -35,9 +35,9 @@ footer {
         a {
           mat-icon {
             color: var(--mat-sys-tertiary);
-          }
-          mat-icon:hover {
-            color: var(--mat-sys-primary);
+            &:hover {
+              color: var(--mat-sys-primary);
+            }
           }
         }
       }
