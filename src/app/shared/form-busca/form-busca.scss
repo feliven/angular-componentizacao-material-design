@@ -1,0 +1,28 @@
+.form-busca {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .linha-superior,
+  .linha-inferior {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .linha-inferior {
+    box-sizing: border-box;
+    gap: 1rem;
+
+    .origem-destino,
+    .datas-e-botao-buscar {
+      display: flex;
+      min-width: 0;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    button.botao-buscar,
+    button.botao-switch {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
