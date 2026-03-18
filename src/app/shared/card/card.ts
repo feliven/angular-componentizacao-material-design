@@ -9,5 +9,5 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './card.scss',
 })
 export class Card {
-  estiloCard = input<'primary' | 'secondary'>('primary');
+  estiloCard = input<'primary' | 'secondary' | 'tertiary'>('primary');
 }
