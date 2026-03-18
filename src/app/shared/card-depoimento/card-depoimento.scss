@@ -9,3 +9,9 @@ mat-card-content {
     margin: 0;
   }
 }
+
+@media screen and (max-width: 940px) {
+  mat-card-content {
+    flex-direction: column;
+  }
+}

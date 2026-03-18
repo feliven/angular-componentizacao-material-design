@@ -83,23 +83,4 @@ body {
       }
     }
   }
-  &.tertiary {
-    mat-card {
-      background-color: var(--mat-sys-primary-container);
-      color: var(--mat-sys-on-primary-container);
-
-      mat-button-toggle,
-      mat-chip-option {
-        background-color: var(--mat-sys-secondary-container);
-        color: var(--mat-sys-on-secondary-container);
-      }
-
-      mat-form-field {
-        input {
-          background-color: var(--mat-sys-tertiary-container);
-          color: var(--mat-sys-on-tertiary-container);
-        }
-      }
-    }
-  }
 }
