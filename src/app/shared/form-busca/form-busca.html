@@ -36,22 +36,23 @@
       </div>
 
       <div class="datas-e-botao-buscar">
-        <mat-form-field appearance="outline">
-          <mat-label>Data de ida</mat-label>
-          <input matInput [matDatepicker]="idaPicker" placeholder="Selecione" />
-          <mat-hint>MM/DD/YYYY</mat-hint>
-          <mat-datepicker-toggle matIconSuffix [for]="idaPicker"></mat-datepicker-toggle>
-          <mat-datepicker #idaPicker></mat-datepicker>
-        </mat-form-field>
+        <div class="datas-ida-volta">
+          <mat-form-field appearance="outline">
+            <mat-label>Data de ida</mat-label>
+            <input matInput [matDatepicker]="idaPicker" placeholder="Selecione" />
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="idaPicker"></mat-datepicker-toggle>
+            <mat-datepicker #idaPicker></mat-datepicker>
+          </mat-form-field>
 
-        <mat-form-field appearance="outline">
-          <mat-label>Data de volta</mat-label>
-          <input matInput [matDatepicker]="voltaPicker" placeholder="Selecione" />
-          <mat-hint>MM/DD/YYYY</mat-hint>
-          <mat-datepicker-toggle matIconSuffix [for]="voltaPicker"></mat-datepicker-toggle>
-          <mat-datepicker #voltaPicker></mat-datepicker>
-        </mat-form-field>
-
+          <mat-form-field appearance="outline">
+            <mat-label>Data de volta</mat-label>
+            <input matInput [matDatepicker]="voltaPicker" placeholder="Selecione" />
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="voltaPicker"></mat-datepicker-toggle>
+            <mat-datepicker #voltaPicker></mat-datepicker>
+          </mat-form-field>
+        </div>
         <button matButton="filled" class="botao-buscar">Buscar</button>
       </div>
     </div>

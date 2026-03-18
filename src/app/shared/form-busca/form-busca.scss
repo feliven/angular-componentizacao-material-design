@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
   background-color: var(--mat-sys-primary-container);
   color: var(--mat-sys-on-primary-container);
 
@@ -25,13 +27,15 @@
     gap: 1rem;
 
     .origem-destino,
+    .datas-ida-volta,
     .datas-e-botao-buscar {
       display: flex;
-      min-width: 0;
       gap: 0.75rem;
+      min-width: 0;
       align-items: center;
 
       mat-form-field {
+        width: 100%;
         input {
           background-color: var(--mat-sys-tertiary-container);
           color: var(--mat-sys-on-tertiary-container);
@@ -42,6 +46,69 @@
     button.botao-buscar,
     button.botao-switch {
       margin-bottom: 1.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-busca {
+    padding-bottom: 0;
+
+    .linha-superior,
+    .linha-inferior {
+      flex-direction: column;
+
+      .datas-e-botao-buscar {
+        flex-direction: column;
+      }
+
+      .origem-destino,
+      .datas-ida-volta {
+        min-width: 0;
+        width: 85vw;
+        justify-content: center;
+        flex-direction: column;
+
+        button.botao-switch {
+          margin-top: -1.25rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 880px) {
+  .form-busca {
+    padding-bottom: 0;
+
+    .linha-superior,
+    .linha-inferior {
+      justify-content: center;
+    }
+
+    .linha-inferior {
+      flex-direction: column;
+
+      .datas-e-botao-buscar {
+        flex-direction: column;
+      }
+
+      .origem-destino,
+      .datas-ida-volta {
+        min-width: 0;
+        width: 80vw;
+        justify-content: center;
+      }
+
+      .origem-destino {
+        margin-bottom: -0.75rem;
+      }
+
+      button.botao-switch {
+        margin-top: -1.25rem;
+        margin-bottom: 0;
+      }
     }
   }
 }
